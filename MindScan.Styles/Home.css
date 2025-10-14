@@ -233,8 +233,10 @@
     }
 
     .header-span {
+        align-self: center;
         line-height: 30px;
         font-size: 30px;
+        width: 80%;
     }
 
     .home-image {
