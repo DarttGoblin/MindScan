@@ -103,8 +103,17 @@
 
 select {
     background: none;
-    border-bottom: px solid var(--primary-hover);
+    border: none;
+    border-bottom: 2px solid var(--primary-hover);
     padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+option {
+    background-color: black;
+    color: var(--primary-color);
 }
 
 @media only screen and (max-width: 800px) {
