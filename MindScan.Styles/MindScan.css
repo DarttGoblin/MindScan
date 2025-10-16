@@ -65,7 +65,8 @@
     margin-top: 30px;
 }
 
-.preview {
+.preview-image {
+    display: none;
     width: 300px;
     margin-top: 30px;
 }

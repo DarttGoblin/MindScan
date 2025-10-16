@@ -7,7 +7,7 @@ upload.onclick = function() {
 }
 
 github.onclick = function() {
-    window.open('https://github.com/DarttGoblin/EchoMind_server', '_blank');
+    window.open('https://github.com/DarttGoblin/MindScan_server', '_blank');
 }
 
 demo.onclick = function() {
