@@ -4,6 +4,7 @@ const analyse = document.querySelector('.analyse');
 const result_container = document.querySelector('.result-container');
 const prediction_value = document.querySelector('.prediction-value');
 const confidence_value = document.querySelector('.confidence-value');
+const header_text = document.querySelector('.header-text');
 
 file_input.onchange = function(event) {
     const file = event.target.files[0];
@@ -18,6 +19,10 @@ file_input.onchange = function(event) {
 };
 
 analyse.onclick = function() {
+    alert('The model is not hosted yet, you may wanna see the demo as well?');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+
     const file = file_input.files[0];
     if (!file) return;
 
