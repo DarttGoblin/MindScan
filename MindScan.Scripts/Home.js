@@ -12,8 +12,7 @@ github.onclick = function() {
 }
 
 report.onclick = function() {
-    alert('Report will be available soon...');
-    // window.open('', '_blank');
+    window.open('https://drive.google.com/file/d/174aBzocatmQW3YoMvSeCZ7j_p8emzh4e/view?usp=sharing', '_blank');
 }
 
 demo.onclick = function() {
