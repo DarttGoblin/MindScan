@@ -38,7 +38,7 @@
 
             <div class="responsive-nav-links-container">
                 <span class="responsive-nav-link">HOME</span>
-                <span class="responsive-nav-link">MindScan</span>
+                <span class="responsive-nav-link">MINDSCAN</span>
                 <span class="responsive-nav-link">ABOUT</span>
             </div>
 
@@ -53,6 +53,7 @@
                 <div class="home-buttons-container">
                     <button class="home-buttons upload">Upload MRI</button>
                     <button class="home-buttons github">Github Repo</button>
+                    <button class="home-buttons report">Read Report</button>
                     <button class="home-buttons demo">See Demo</button>
                 </div>
             </div>            
@@ -102,18 +103,12 @@
                 <span class="upload-span">UPLOAD MRI IMAGE</span>
                 <input class="file-input" type="file" accept="image/png, image/jpeg, image/jpg">
             </div>
-            <select>
-                <option value="">Choose scan type</option>
-                <option value="T1">T1-weighted</option>
-                <option value="T2">T2-weighted</option>
-                <option value="FLAIR">FLAIR</option>
-            </select>
         </div>
         <img class="preview-image">
-        <button class="submit">Analyze</button>
+        <button class="analyse">Analyze</button>
         <div class="result-container">
-            <span class="prediction-span">Diagnosis Result: <span class="prediction-value"></span></span>
-            <span class="confidence-span">Confidence: <span class="confidence-value"></span></span>
+            <span class="prediction-span">Diagnosis Result: <span class="prediction-value">Normal</span></span>
+            <span class="confidence-span">Confidence: <span class="confidence-value">88%</span></span>
         </div>
     </section>    
 

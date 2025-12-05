@@ -1,5 +1,6 @@
 const upload = document.querySelector('.upload');
 const github = document.querySelector('.github');
+const report = document.querySelector('.report');
 const demo = document.querySelector('.demo');
 
 upload.onclick = function() {
@@ -10,7 +11,11 @@ github.onclick = function() {
     window.open('https://github.com/DarttGoblin/MindScan_server', '_blank');
 }
 
-demo.onclick = function() {
-    alert('Demo will be available soon...');
+report.onclick = function() {
+    alert('Report will be available soon...');
     // window.open('', '_blank');
+}
+
+demo.onclick = function() {
+    window.open('https://drive.google.com/file/d/1_j0gD5WEaxMWhIlNMnhSUcaUbxzzOeMU/view?usp=sharing', '_blank');
 }

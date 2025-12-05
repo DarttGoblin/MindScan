@@ -81,7 +81,7 @@
     color: white;
 }
 
-.submit {
+.analyse {
     width: fit-content;
     padding: 10px 30px;
     color: white;
@@ -97,7 +97,7 @@
     margin-top: 20px;
 }
 
-.submit:hover {
+.analyse:hover {
     background-color: var(--primary-dark-hover);
     border: 2px solid var(--primary-dark-hover);
 }
