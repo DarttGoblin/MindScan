@@ -13,7 +13,7 @@ const social_media = [
 ]
 
 professor.onclick = function() {
-    window.open('', '_blank');
+    window.open('https://www.linkedin.com/in/issam-qaffou-a129ab30b/', '_blank');
 }
 
 footer_body_info.forEach((info, index) => {
