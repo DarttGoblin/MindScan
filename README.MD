@@ -1,46 +1,30 @@
-Overview:
-MindScan is an intelligent web interface designed to analyze Brain MRI scans using AI. The frontend provides a smooth, intuitive user experience where clinicians, researchers, or students can upload MRI images and visualize diagnostic insights instantly. The interface is simple yet powerful — optimized for clarity, speed, and precision.
+MindScan
 
-Core Features:
+MindScan is a lightweight, web-based deep learning system designed for automated brain tumor detection and classification from MRI scans. The platform provides an intuitive interface where users can upload MRI images and instantly receive predictions powered by a hierarchical MobileNetV2 architecture.
 
-Image Upload: Users can upload MRI scans (JPG, PNG, DICOM, or NIfTI).
+Overview
 
-Preview Display: Once uploaded, the scan preview appears instantly for confirmation.
+MindScan processes MRI scans through a carefully designed preprocessing pipeline that includes grayscale conversion, black-border removal, CLAHE contrast enhancement, bilateral denoising, and intensity normalization. These steps enhance feature clarity and ensure consistent input for the models.
 
-AI Analysis Trigger: A single click submits the scan to the backend for automated brain analysis.
+The system uses a dual-stage architecture. The first stage performs binary classification to determine whether a tumor is present. If a tumor is detected, the second stage classifies the case into one of three tumor types: glioma, meningioma, or pituitary. This approach ensures both efficiency and high accuracy.
 
-Results Display: Visual feedback such as highlighted tumor regions or classification results is shown clearly.
+Performance
 
-Minimalistic Layout: Focused design to reduce distraction and maintain medical relevance.
+The underlying MobileNetV2 models were trained on preprocessed MRI datasets, achieving:
 
-Structure:
+Binary tumor detection accuracy: 99%
+Multi-class tumor classification accuracy: 91.3%
 
-Header: Displays the MindScan logo and tagline — “AI-powered Brain MRI Analysis.”
+These results highlight the system’s reliability and its suitability for real-time and clinical-oriented applications.
 
-Upload Section: Main area containing file input and submit button.
+Features
 
-Preview Section: Shows the selected MRI scan before processing.
+Upload MRI images directly through the web interface.
+Receive real-time tumor predictions with clear classification results.
+Lightweight architecture optimized for fast client–server deployment.
+High accuracy through enhanced preprocessing and a hierarchical pipeline.
 
-Results Section: Displays AI-generated analysis results (detected area, confidence score, etc.).
+Live Demo
 
-Footer: Includes credits and medical disclaimer (“For research use only”).
-
-Design Language:
-
-Color Scheme: Calm lavender tones (RGB 230, 230, 250) with deeper purple accents (RGB 123, 104, 238). This gives a clinical, intelligent, and soothing appearance.
-
-Typography: Clean and modern sans-serif font for a professional, medical feel.
-
-Icons: Uses Font Awesome for consistent symbol design (upload, scan, result, etc.).
-
-User Flow:
-
-Open the MindScan web page.
-
-Upload a brain MRI image.
-
-Click “Analyze.”
-
-View real-time results — either a visual overlay or probability metrics.
-
-Optionally, download or save the analysis result.
+MindScan interface:
+https://darttgoblin.github.io/MindScan/MindScan.html
