@@ -8,7 +8,7 @@ upload.onclick = function() {
 }
 
 github.onclick = function() {
-    window.open('https://github.com/DarttGoblin/MindScan_server', '_blank');
+    window.open('https://github.com/DarttGoblin/MindScan/tree/main/MindScan.Backend', '_blank');
 }
 
 report.onclick = function() {
